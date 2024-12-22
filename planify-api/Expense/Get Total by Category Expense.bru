@@ -1,0 +1,20 @@
+meta {
+  name: Get Total by Category Expense
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL}}/expense/total-by-category
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~startDate: 2024-12-17T23:48:35.527Z
+  ~endDate: 2024-12-19T23:48:35.527Z
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

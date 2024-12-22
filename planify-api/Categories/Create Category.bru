@@ -1,0 +1,25 @@
+meta {
+  name: Create Category
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/categories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "name": "juegos",
+    "type": "expense",
+    "icon": "icon-library",
+    "iconColor": "#fff",
+    "backgroundColor": "#fff"
+  }
+}

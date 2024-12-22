@@ -1,0 +1,21 @@
+meta {
+  name: Update Category
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL}}/categories/b78f7f92-fac3-4fcc-950a-40ccf04a824f
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "name": "productividad"
+  }
+}

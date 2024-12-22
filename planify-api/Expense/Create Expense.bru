@@ -1,0 +1,26 @@
+meta {
+  name: Create Expense
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{URL}}/expense/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "name": "Google One",
+    "amount": 2.99,
+    "description": "Nube de Google",
+    "date": "2024-12-22T23:48:35.527Z",
+    "categoryId": "b78f7f92-fac3-4fcc-950a-40ccf04a824f"
+  }
+  
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "Fernando",
+    "lastName": "Diaz",
+    "username": "Metaldev06",
+    "email": "fernydiaz62@gmail.com",
+    "password": "Metaldroide666",
+    "image": "https://res.cloudinary.com/dw24usdw9/image/upload/v1719707146/me_image_46ce0d2d72.png"
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get All Expense
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/expense
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~startDate: 2024-12-17T23:48:35.527Z
+  ~endDate: 2024-12-19T23:48:35.527Z
+  ~category: productividad
+  ~limit: 10
+  ~offset: 0
+  ~order: asc
+  ~sort: id
+  ~term: 
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

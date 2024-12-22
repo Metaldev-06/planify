@@ -1,0 +1,22 @@
+meta {
+  name: Get One Expense
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{URL}}/expense/268a2073-496d-46b4-8bf2-78c367d25b38
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~limit: 10
+  ~offset: 0
+  ~order: asc
+  ~sort: id
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
